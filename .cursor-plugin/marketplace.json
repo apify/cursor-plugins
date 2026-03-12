@@ -1,24 +1,24 @@
 {
-  "name": "cursor-plugin-starters",
+  "name": "apify-cursor-plugins",
   "owner": {
-    "name": "Your Org",
-    "email": "plugins@example.com"
+    "name": "Apify",
+    "email": "support@apify.com"
   },
   "metadata": {
-    "description": "Starter marketplace template for Cursor plugins",
+    "description": "Official Apify skills for Cursor – web scraping, data extraction, and automation",
     "version": "0.1.0",
     "pluginRoot": "plugins"
   },
   "plugins": [
     {
-      "name": "starter-simple",
-      "source": "./plugins/starter-simple",
-      "description": "Minimal plugin with rules and skills only"
+      "name": "apify-scraper",
+      "source": "./apify-scraper",
+      "description": "Universal AI-powered web scraper for 55+ platforms"
     },
     {
-      "name": "starter-advanced",
-      "source": "./plugins/starter-advanced",
-      "description": "Full-featured plugin with rules, skills, agents, commands, hooks, and MCP"
+      "name": "apify-dev-tools",
+      "source": "./apify-dev-tools",
+      "description": "Develop, debug, deploy, and convert projects into Apify Actors"
     }
   ]
 }

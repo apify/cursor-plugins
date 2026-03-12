@@ -1,34 +1,44 @@
-# Cursor plugin template
+# Apify Cursor Plugins
 
-Build and publish Cursor Marketplace plugins from a single repo.
+Official Apify plugins for Cursor — web scraping, data extraction, and automation.
 
-Two starter plugins are included:
+> Looking for standalone skills (Claude Code, Codex, Gemini CLI)? See [apify/agent-skills](https://github.com/apify/agent-skills).
 
-- **starter-simple**: rules and skills only
-- **starter-advanced**: rules, skills, agents, commands, hooks, MCP, and scripts
+## Plugins
 
-## Getting started
+### `apify-scraper`
 
-[Use this template](https://github.com/cursor/plugin-template/generate) to create a new repository, then customize:
+Universal AI-powered web scraper for 55+ platforms. One skill that covers all data extraction use cases.
 
-1. `.cursor-plugin/marketplace.json`: set marketplace `name`, `owner`, and `metadata`.
-2. `plugins/*/.cursor-plugin/plugin.json`: set `name` (lowercase kebab-case), `displayName`, `author`, `description`, `keywords`, `license`, and `version`.
-3. Replace placeholder rules, skills, agents, commands, hooks, scripts, and logos.
+- **Skill**: `apify-ultimate-scraper` — scrape data from Instagram, Facebook, TikTok, YouTube, Google Maps, Amazon, Walmart, eBay, Booking.com, TripAdvisor, and 45+ more platforms
+- **Use cases**: lead generation, brand monitoring, competitor analysis, influencer discovery, trend research, content analytics, audience analysis, e-commerce pricing, reviews
 
-To add more plugins, see `docs/add-a-plugin.md`.
+### `apify-dev-tools`
 
-## Single plugin vs multi-plugin
+Build, deploy, and convert projects into Apify Actors with full platform integration.
 
-This template defaults to **multi-plugin** (multiple plugins in one repo).
+- **Skills**:
+  - `apify-actor-development` — create, debug, and deploy Actors from scratch (JS/TS/Python)
+  - `apify-actorization` — convert existing projects into Actors
+- **Command**: `/create-actor` — guided 10-phase Actor creation workflow
+- **MCP server**: Apify platform access (docs, Actor search, run logs, storage)
 
-For a **single plugin**, move your plugin folder contents to the repository root, keep one `.cursor-plugin/plugin.json`, and remove `.cursor-plugin/marketplace.json`.
+## Prerequisites
 
-## Submission checklist
+1. **Apify account** — [apify.com](https://apify.com)
+2. **API token** — get from [Apify Console](https://console.apify.com/account/integrations), add `APIFY_TOKEN=your_token` to `.env`
+3. **Node.js 20.6+**
+4. **[mcpc CLI](https://github.com/apify/mcp-cli)** — `npm install -g @apify/mcpc`
 
-- Each plugin has a valid `.cursor-plugin/plugin.json`.
-- Plugin names are unique, lowercase, and kebab-case.
-- `.cursor-plugin/marketplace.json` entries map to real plugin folders.
-- All frontmatter metadata is present in rule, skill, agent, and command files.
-- Logos are committed and referenced with relative paths.
-- `node scripts/validate-template.mjs` passes.
-- Repository link is ready for submission to the Cursor team (Slack or `kniparko@anysphere.com`).
+## Pricing
+
+Apify Actors use pay-per-result pricing. Check individual Actor pricing on the [Apify platform](https://apify.com).
+
+## Support
+
+- [Apify Documentation](https://docs.apify.com)
+- [Apify Discord](https://discord.gg/jyEM2PRvMU)
+
+## License
+
+[Apache-2.0](LICENSE)
